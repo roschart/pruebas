@@ -16,6 +16,28 @@ class Proxy
   def initialize(target_object)
     @object = target_object
     # ADD MORE CODE HERE
+    @called_funtions=Array.new
+  end
+
+  def method_missing(method_name, *args, &block)
+    @called_funtions<<method_name
+    if @object.respond_to?(method_name)
+      @object.send(method_name, *args, &block)
+    else
+      super(method_name,*args,&block)
+    end
+  end
+
+  def messages
+    @called_funtions
+  end
+
+  def called? (method_name)
+    @called_funtions.include?(method_name)
+  end
+
+  def number_of_times_called (method_name)
+    @called_funtions.count(method_name)
   end
 
   # WRITE CODE HERE
