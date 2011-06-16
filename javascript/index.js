@@ -7,8 +7,7 @@ if(doc.nombre){
   var len=doc.nombre.length;
   var n=0;
   var key='';
-  console.log(len);
-  results={}
+  var results={}
   for (var i=0;i<len;i++){
     for (var j=0;j<(len-i);j++){
       n++;
