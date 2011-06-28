@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gestor de tareas con couchdb</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+  </head>
+  <body>
+	  <h1 id="heading">Tareas</h1>
+	  <p>A simple CouchApp that allows you to create new tasks
+	  and delete completed ones.</p>
+	  <form name="add_task" id="add_task">
+		  <fieldset>
+			  <legend>New Task</legend>
+			  <label for="desc">Description:</label><br />
+			  <textarea id="desc" name="desc"></textarea><br />
+			  <input type="submit" id="create" value="Create" />
+		  </fieldset>
+	  </form>
+	  <form name="tasks" id="tasks">
+		  <fieldset>
+			  <legend>My Tasks</legend>
+			  <div id="task_count">You have <span>0</span> Task(s).</div>
+			  <ul id="my_tasks"></ul>
+		  </fieldset>
+	  </form>
+
+  </body>
+   <script src="vendor/couchapp/loader.js"></script> 
+   <script src="script/main.js"></script> 
+</html>

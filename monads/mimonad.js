@@ -19,3 +19,18 @@ var m_bind=function(f,x){
 
 d=m_bind(triple,m_bind(doble,m_result(2)));
 console.log(d);
+//Otra forma
+
+function deco_bind(f){
+	var deco=function()	{
+		r=f(arguments[0][0]);
+		s=arguments[0][1] + ' ' + inf;
+		return [r,s];
+	}
+	return deco;
+}
+
+doble=deco_bind(doble);
+triple=deco_bind(triple);
+b=doble(triple(m_result(3)));
+console.log(b);
