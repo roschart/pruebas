@@ -17,7 +17,7 @@
 		console.log("Haciendo muchas cosas con " +texto);
 		setTimeout(function(){
 			console.log("Finalizado hacer cosas con " +texto);
-			def.resolve();
+			def.resolve("Esto marcha");
 		},1000);
 		return def.promise();
 	}
@@ -25,14 +25,17 @@
 		console.log("alertando");
 		$('p').addClass('alerta');
 	}
-	function finAlerta(){
+	function finAlerta(text){
 		console.log("Fin de alertando");
-	    $('p').removeClass('alerta');
+		var p=$('p').removeClass('alerta');
+		if(text){
+			$(p).text(text);
+		}
 	}
 
 	$('button').bind('click',function(){
 		console.log('click');
-		$.when(pesada("Una cantidad de datos increible"),alertar()).done(function(){finAlerta();});
+		$.when(pesada("Una cantidad de datos increible"),alertar()).done(function(x){finAlerta(x);});
 
 	});	
 
