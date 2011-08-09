@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/17/trunk/tests/simpletest
+END
+dumper.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/17/trunk/tests/simpletest/dumper.php
+END
+cookies.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/trunk/tests/simpletest/cookies.php
+END
+shell_tester.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/trunk/tests/simpletest/shell_tester.php
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/17/trunk/tests/simpletest/VERSION
+END
+reporter.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/17/trunk/tests/simpletest/reporter.php
+END
+url.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/17/trunk/tests/simpletest/url.php
+END
+web_tester.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/trunk/tests/simpletest/web_tester.php
+END
+compatibility.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/trunk/tests/simpletest/compatibility.php
+END
+test_case.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/trunk/tests/simpletest/test_case.php
+END
+tag.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/17/trunk/tests/simpletest/tag.php
+END
+authentication.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/trunk/tests/simpletest/authentication.php
+END
+exceptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/trunk/tests/simpletest/exceptions.php
+END
+expectation.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/trunk/tests/simpletest/expectation.php
+END
+reflection_php4.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/trunk/tests/simpletest/reflection_php4.php
+END
+collector.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/trunk/tests/simpletest/collector.php
+END
+reflection_php5.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/trunk/tests/simpletest/reflection_php5.php
+END
+socket.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/17/trunk/tests/simpletest/socket.php
+END
+simpletest.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/trunk/tests/simpletest/simpletest.php
+END
+remote.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/17/trunk/tests/simpletest/remote.php
+END
+user_agent.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/trunk/tests/simpletest/user_agent.php
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/17/trunk/tests/simpletest/LICENSE
+END
+parser.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/17/trunk/tests/simpletest/parser.php
+END
+autorun.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/trunk/tests/simpletest/autorun.php
+END
+scorer.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/17/trunk/tests/simpletest/scorer.php
+END
+xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/17/trunk/tests/simpletest/xml.php
+END
+detached.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/17/trunk/tests/simpletest/detached.php
+END
+mock_objects.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/trunk/tests/simpletest/mock_objects.php
+END
+form.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/17/trunk/tests/simpletest/form.php
+END
+unit_tester.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/trunk/tests/simpletest/unit_tester.php
+END
+default_reporter.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/trunk/tests/simpletest/default_reporter.php
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/17/trunk/tests/simpletest/README
+END
+HELP_MY_TESTS_DONT_WORK_ANYMORE
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/17/trunk/tests/simpletest/HELP_MY_TESTS_DONT_WORK_ANYMORE
+END
+page.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/17/trunk/tests/simpletest/page.php
+END
+errors.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/17/trunk/tests/simpletest/errors.php
+END
+frames.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/17/trunk/tests/simpletest/frames.php
+END
+invoker.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/trunk/tests/simpletest/invoker.php
+END
+http.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/17/trunk/tests/simpletest/http.php
+END
+selector.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/17/trunk/tests/simpletest/selector.php
+END
+browser.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/trunk/tests/simpletest/browser.php
+END
+eclipse.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/trunk/tests/simpletest/eclipse.php
+END
+encoding.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/17/trunk/tests/simpletest/encoding.php
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/20/trunk/tests
+END
+all_tests.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/20/trunk/tests/all_tests.php
+END
+wire_format_test.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/20/trunk/tests/wire_format_test.php
+END

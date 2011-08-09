@@ -1,0 +1,21 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>PrimerasPruebas</title>
+	<script src="ext-core-3.1.0/ext-core-debug.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<p id="prueba">
+ 		<script type="text/javascript" charset="utf-8">
+		Ext.onReady(function() {
+				Ext.DomHelper.append(document.body, {tag: 'p', cls: 'some-class'});
+				Ext.select('p.some-class').update('Ext Core successfully injected');
+				var el=Ext.get('prueba');
+				console.log(el);
+				el.addClass('error');
+				Ext.fly('prueba').addClass('otra_cosa');
+				});
+		</script>
+</body>
+</html>

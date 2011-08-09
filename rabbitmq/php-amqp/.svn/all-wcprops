@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 22
+/svn/!svn/ver/15/trunk
+END
+amqp.c
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/14/trunk/amqp.c
+END
+example.php
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/14/trunk/example.php
+END
+config.m4
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/2/trunk/config.m4
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/4/trunk/INSTALL
+END
+package.xml
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/15/trunk/package.xml
+END
+run-tests.php
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/2/trunk/run-tests.php
+END
+php_amqp.h
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/8/trunk/php_amqp.h
+END
+CREDITS
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/4/trunk/CREDITS
+END
+EXPERIMENTAL
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/4/trunk/EXPERIMENTAL
+END
+run-example
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/8/trunk/run-example
+END

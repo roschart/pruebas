@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/17/trunk/tests/simpletest/extensions
+END
+testdox.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/trunk/tests/simpletest/extensions/testdox.php
+END
+phpunit_test_case.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/17/trunk/tests/simpletest/extensions/phpunit_test_case.php
+END
+pear_test_case.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/17/trunk/tests/simpletest/extensions/pear_test_case.php
+END
