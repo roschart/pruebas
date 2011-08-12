@@ -1,0 +1,221 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/home/jose/opt/node-v0.4.8/build/bin/npm',
+verbose cli   'install',
+verbose cli   '-g',
+verbose cli   'contextify' ]
+info using npm@1.0.15
+info using node@v0.4.8
+verbose config file /home/jose/.npmrc
+verbose config file /home/jose/opt/node-v0.4.8/build/etc/npmrc
+verbose into /home/jose/opt/node-v0.4.8/build/lib [ 'contextify' ]
+verbose cache add [ 'contextify', null ]
+info addNamed [ 'contextify', '' ]
+verbose addNamed [ null, '' ]
+verbose GET contextify
+verbose raw, before any munging contextify
+verbose url resolving [ 'http://registry.npmjs.org/', './contextify' ]
+verbose url resolved http://registry.npmjs.org/contextify
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'http://registry.npmjs.org/contextify',
+verbose url parsed   pathname: '/contextify' }
+verbose etag "B2A31UHM1FY4KWFJJ3K7RYHOO"
+verbose response http://registry.npmjs.org/contextify
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"B2A31UHM1FY4KWFJJ3K7RYHOO"',
+silly get cb     date: 'Fri, 12 Aug 2011 14:19:34 GMT',
+silly get cb     'content-length': '0',
+silly get cb     'x-cache': 'MISS from true',
+silly get cb     'x-cache-lookup': 'MISS from true:3128',
+silly get cb     via: '1.0 true (squid/3.0.STABLE8)',
+silly get cb     'proxy-connection': 'close' } ]
+verbose etag contextify from cache
+verbose GET contextify/0.0.3
+verbose raw, before any munging contextify/0.0.3
+verbose url resolving [ 'http://registry.npmjs.org/', './contextify/0.0.3' ]
+verbose url resolved http://registry.npmjs.org/contextify/0.0.3
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'http://registry.npmjs.org/contextify/0.0.3',
+verbose url parsed   pathname: '/contextify/0.0.3' }
+verbose etag "B2A31UHM1FY4KWFJJ3K7RYHOO"
+verbose response http://registry.npmjs.org/contextify/0.0.3
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"B2A31UHM1FY4KWFJJ3K7RYHOO"',
+silly get cb     date: 'Fri, 12 Aug 2011 14:19:34 GMT',
+silly get cb     'content-length': '0',
+silly get cb     'x-cache': 'MISS from true',
+silly get cb     'x-cache-lookup': 'MISS from true:3128',
+silly get cb     via: '1.0 true (squid/3.0.STABLE8)',
+silly get cb     'proxy-connection': 'close' } ]
+verbose etag contextify/0.0.3 from cache
+verbose bin dist [ '0.4-ares1.7.4-ev4.4-openssl0.9.8o-v83.1.8.16-linux-2.6.38-10-generic',
+verbose bin dist   { shasum: '7cee1a92683fc4c6b4f3c464b49dd65671c2072e',
+verbose bin dist     tarball: 'http://registry.npmjs.org/contextify/-/contextify-0.0.3.tgz' } ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/home/jose/.npm/contextify/0.0.3/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { author: 
+silly testEngine    { name: 'Brian McDaniel',
+silly testEngine      email: 'brianmcd05@gmail.com' },
+silly testEngine   name: 'contextify',
+silly testEngine   description: 'Turn an object into a persistent execution context.',
+silly testEngine   keywords: [ 'context', 'vm' ],
+silly testEngine   version: '0.0.3',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/brianmcd/contextify.git' },
+silly testEngine   main: './lib/contextify.js',
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   engines: { node: '>=0.4.0' },
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'MIT',
+silly testEngine        url: 'http://github.com/brianmcd/contextify/blob/master/LICENSE.txt' } ],
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: { nodeunit: '>=0.5.x' },
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/home/jose/.npm/contextify/0.0.3/package/package.json',
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false,
+silly testEngine      wscript: true },
+silly testEngine   _id: 'contextify@0.0.3',
+silly testEngine   scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.15',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/jose/.npm/contextify/0.0.3/package/package.json
+verbose loadDefaults contextify@0.0.3
+silly resolved [ { author: 
+silly resolved      { name: 'Brian McDaniel',
+silly resolved        email: 'brianmcd05@gmail.com' },
+silly resolved     name: 'contextify',
+silly resolved     description: 'Turn an object into a persistent execution context.',
+silly resolved     keywords: [ 'context', 'vm' ],
+silly resolved     version: '0.0.3',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/brianmcd/contextify.git' },
+silly resolved     main: './lib/contextify.js',
+silly resolved     directories: { lib: './lib' },
+silly resolved     engines: { node: '>=0.4.0' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/brianmcd/contextify/blob/master/LICENSE.txt' } ],
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { nodeunit: '>=0.5.x' },
+silly resolved     _npmJsonOpts: 
+silly resolved      { file: '/home/jose/.npm/contextify/0.0.3/package/package.json',
+silly resolved        contributors: false,
+silly resolved        serverjs: false,
+silly resolved        wscript: true },
+silly resolved     _id: 'contextify@0.0.3',
+silly resolved     scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.0.15',
+silly resolved     _nodeVersion: 'v0.4.8',
+silly resolved     _defaultsLoaded: true } ]
+info into /home/jose/opt/node-v0.4.8/build/lib contextify@0.0.3
+info installOne contextify@0.0.3
+info unbuild /home/jose/opt/node-v0.4.8/build/lib/node_modules/contextify
+verbose from cache /home/jose/.npm/contextify/0.0.3/package/package.json
+verbose mkdir done: /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /home/jose/opt/node-v0.4.8/build/lib/node_modules/contextify
+silly gunzTarPerm modes [ '755', '644' ]
+verbose success gzip "--decompress" "--stdout" "/home/jose/.npm/contextify/0.0.3/package.tgz"
+verbose success tar "-mvxpf" "-" "--no-same-owner" "-C" "/home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm"
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/.gitignore
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/wscript
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/README.md
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/LICENSE.txt
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/package.json
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/src/
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/src/contextify.cc
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/test/
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/test/contextify.js
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/lib/
+silly asyncMap in gTP /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package/lib/contextify.js
+verbose gunzed /home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package
+verbose rm'ed /home/jose/opt/node-v0.4.8/build/lib/node_modules/contextify
+verbose renamed [ '/home/jose/opt/node-v0.4.8/build/lib/node_modules/___contextify.npm/package',
+verbose renamed   '/home/jose/opt/node-v0.4.8/build/lib/node_modules/contextify' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/home/jose/opt/node-v0.4.8/build/lib/node_modules/contextify/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { author: 
+silly testEngine    { name: 'Brian McDaniel',
+silly testEngine      email: 'brianmcd05@gmail.com' },
+silly testEngine   name: 'contextify',
+silly testEngine   description: 'Turn an object into a persistent execution context.',
+silly testEngine   keywords: [ 'context', 'vm' ],
+silly testEngine   version: '0.0.3',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/brianmcd/contextify.git' },
+silly testEngine   main: './lib/contextify.js',
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   engines: { node: '>=0.4.0' },
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'MIT',
+silly testEngine        url: 'http://github.com/brianmcd/contextify/blob/master/LICENSE.txt' } ],
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: { nodeunit: '>=0.5.x' },
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/home/jose/opt/node-v0.4.8/build/lib/node_modules/contextify/package.json',
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false,
+silly testEngine      wscript: true },
+silly testEngine   _id: 'contextify@0.0.3',
+silly testEngine   scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.15',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/jose/opt/node-v0.4.8/build/lib/node_modules/contextify/package.json
+verbose loadDefaults contextify@0.0.3
+info preinstall contextify@0.0.3
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "node-waf clean || true; node-waf configure build"
+info contextify@0.0.3 Failed to exec preinstall script
+ERR! error installing contextify@0.0.3 Error: contextify@0.0.3 preinstall: `node-waf clean || true; node-waf configure build`
+ERR! error installing contextify@0.0.3 `sh "-c" "node-waf clean || true; node-waf configure build"` failed with 1
+ERR! error installing contextify@0.0.3     at ChildProcess.<anonymous> (/home/jose/opt/node-v0.4.8/build/lib/node_modules/npm/lib/utils/exec.js:49:20)
+ERR! error installing contextify@0.0.3     at ChildProcess.emit (events.js:67:17)
+ERR! error installing contextify@0.0.3     at ChildProcess.onexit (child_process.js:192:12)
+info unbuild /home/jose/opt/node-v0.4.8/build/lib/node_modules/contextify
+verbose from cache /home/jose/opt/node-v0.4.8/build/lib/node_modules/contextify/package.json
+info preuninstall contextify@0.0.3
+info uninstall contextify@0.0.3
+verbose unbuild contextify@0.0.3 [ true,
+verbose unbuild contextify@0.0.3   '/home/jose/opt/node-v0.4.8/build/lib/node_modules',
+verbose unbuild contextify@0.0.3   '/home/jose/opt/node-v0.4.8/build/lib/node_modules' ]
+info postuninstall contextify@0.0.3
+verbose installOne cb contextify@0.0.3
+ERR! contextify@0.0.3 preinstall: `node-waf clean || true; node-waf configure build`
+ERR! `sh "-c" "node-waf clean || true; node-waf configure build"` failed with 1
+ERR! 
+ERR! Failed at the contextify@0.0.3 preinstall script.
+ERR! This is most likely a problem with the contextify package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node-waf clean || true; node-waf configure build
+ERR! You can get their info via:
+ERR!     npm owner ls contextify
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Linux 2.6.38-10-generic
+ERR! command "node" "/home/jose/opt/node-v0.4.8/build/bin/npm" "install" "-g" "contextify"
+verbose exit [ 1, true ]

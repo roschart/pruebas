@@ -1,0 +1,187 @@
+<background>
+  <starttime>
+    <year>2009</year>
+    <month>08</month>
+    <day>04</day>
+    <hour>00</hour>
+    <minute>00</minute>
+    <second>00</second>
+  </starttime>
+<!-- This animation will start at midnight. -->
+ <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/razer_01.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/razer_01.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/j_chung_01.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/j_chung_01.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/j_chung_01.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/artur_03.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/artur_03.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/artur_03.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/z_graves_07.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/z_graves_07.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/z_graves_07.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/spraynation_08.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/spraynation_08.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/spraynation_08.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/tom_zhao_01.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/tom_zhao_01.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/tom_zhao_01.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/z_graves_01.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/z_graves_01.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/z_graves_01.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/michel_02.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/michel_02.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/michel_02.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/manchu_3.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/manchu_3.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/manchu_3.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/anton_f_03.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/anton_f_03.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/anton_f_03.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/z_graves_04.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/z_graves_04.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/z_graves_04.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/anton_f_01.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/anton_f_01.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/anton_f_01.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/anton_f_02.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/anton_f_02.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/anton_f_02.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/david_d_06.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/david_d_06.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/david_d_06.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/flyingdebris_15.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/flyingdebris_15.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/flyingdebris_15.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/tom_zhao_02.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/tom_zhao_02.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/tom_zhao_02.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/z_graves_06.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/z_graves_06.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/z_graves_06.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/repairs_in_asteroid_field_by_voxmortem-d37k7gu.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/repairs_in_asteroid_field_by_voxmortem-d37k7gu.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/repairs_in_asteroid_field_by_voxmortem-d37k7gu.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/spraynation_01.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/spraynation_01.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/spraynation_01.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/z_graves_05.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/z_graves_05.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/z_graves_05.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/manchu_01.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/manchu_01.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/manchu_01.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/david_d_05.jpg</to>
+    </transition> <static>
+    <duration>1795.0</duration>
+    <file>/home/jose/Dropbox/wallpapers/simple/david_d_05.jpg</file>
+    </static>
+    <transition>
+      <duration>5.0</duration>
+      <from>/home/jose/Dropbox/wallpapers/simple/david_d_05.jpg</from>
+      <to>/home/jose/Dropbox/wallpapers/simple/anton_f_05.jpg</to>
+    </transition></background>
