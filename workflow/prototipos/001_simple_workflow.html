@@ -33,17 +33,6 @@
     </div>
     <div id="stage_003" class="stage">
         <div class="stage_head">
-            <span>Preparar Orden de trabajo</span>
-        </div>
-        <div class="stage_body">
-        </div>
-        <ul>
-            <li>Contrato 007</li>
-            <li>Contrato 008</li>
-        </ul>
-    </div>
-    <div id="stage_004" class="stage">
-        <div class="stage_head">
             <span>En proceso de instalación</span>
         </div>
         <div class="stage_body">
@@ -65,15 +54,43 @@
             <div class="stage_body">
             </div>
             <ul>
-                <li>Contrato 005</li>
-                <li>Contrato 004</li>
+                {{tmpl(tasks) "#tasksTemplate"}}
             </ul>
         </div>
 
     </script>
+     <script id="tasksTemplate" type="text/x-jquery-tmpl">
+        <li id=${id}>${title}</li>
+
+    </script>
     <script type="text/javascript">
         var workflow = {
-            stages: [{ id: 'stage_001', title: 'Nuevo Contrato JSON'}]
+            stages: [{
+                id: 'stage_001',
+                title: 'Nuevo Contrato JSON',
+                tasks: [
+                { id: '005', title: 'ContratoJSON 005' },
+                {id:'004', title:'ContratoJSON 004'}
+                ]
+            }, 
+            {
+                id: 'stage_002',
+                title: 'Preparar Orden de trabajo',
+                tasks: [
+                { id: '001', title: 'ContratoJSON 001' },
+                { id: '006', title: 'ContratoJSON 006' }
+                ]
+            },
+               {
+                   id: 'stage_003',
+                   title: 'En Proceso Instalación',
+                   tasks: [
+                { id: '002', title: 'ContratoJSON 002' },
+                { id: '009', title: 'ContratoJSON 009' }
+                ]
+               }
+            
+            ]
         }
 
         $("#workflow").workFlow(workflow).css('color', 'red');

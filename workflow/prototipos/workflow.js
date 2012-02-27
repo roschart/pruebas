@@ -3,12 +3,7 @@
         init: function (workflow) {
             return this.each(function () {
                 var $this = $(this);
-                $.each(workflow.stages, function (stage) {
-                    $("#stageTemplate").tmpl(workflow.stages).appendTo($this);
-
-                });
-
-
+                $("#stageTemplate").tmpl(workflow.stages).appendTo($this);
             });
         },
         show: function () {
