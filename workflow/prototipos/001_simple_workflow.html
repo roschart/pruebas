@@ -18,16 +18,16 @@
                 <span>${title}</span>
             </div>
             <div class="stage_body">
-            
-            <ul>
                 {{tmpl(tasks) "#tasksTemplate"}}
-            </ul>
             </div>
         </div>
 
     </script>
     <script id="tasksTemplate" type="text/x-jquery-tmpl">
-        <li id=${id} class="task">${title}</li>
+        <div id=${id} class="task">
+            <div class="task_message">${title}</div>
+            <div class="task_actions">Done</div>
+        </div>
 
     </script>
     <script type="text/javascript">
