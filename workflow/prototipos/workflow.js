@@ -5,15 +5,6 @@
                 var $this = $(this);
                 $("#stageTemplate").tmpl(workflow.stages).appendTo($this);
             });
-        },
-        show: function () {
-            // IS
-        },
-        hide: function () {
-            // GOOD
-        },
-        update: function (content) {
-            // !!! 
         }
     };
 
