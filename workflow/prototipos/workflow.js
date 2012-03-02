@@ -7,7 +7,6 @@
                 methods.taskDone($(this).parent());
             });
             return this.each(function () {
-
                 $("#stageTemplate").tmpl(workflow.stages).appendTo($this);
             });
         },
