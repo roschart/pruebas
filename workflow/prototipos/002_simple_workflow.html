@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Work Flow</title>
+    <script src="../scripts/jquery-1.7.1.js.rb.js" type="text/javascript"></script>
+    <script src="workflow.js" type="text/javascript"></script>
+    <script src="../scripts/jquery.tmpl.min.js.rb.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>
+        Contenido estático a simular</h1>
+    <div id="stage_001" class="stage">
+        <div class="stage_head">
+            <span>Nuevo Contrato</span>
+        </div>
+        <div class="stage_body">
+        </div>
+        <ul>
+            <li>Contrato 005</li>
+            <li>Contrato 004</li>
+        </ul>
+    </div>
+    <div id="stage_002" class="stage">
+        <div class="stage_head">
+            <span>Preparar Orden de trabajo</span>
+        </div>
+        <div class="stage_body">
+        </div>
+        <ul>
+            <li>Contrato 001</li>
+            <li>Contrato 006</li>
+        </ul>
+    </div>
+    <div id="stage_003" class="stage">
+        <div class="stage_head">
+            <span>En proceso de instalación</span>
+        </div>
+        <div class="stage_body">
+        </div>
+        <ul>
+            <li>Contrato 002</li>
+            <li>Contrato 009</li>
+        </ul>
+    </div>
+    <h1>
+        Contenido dinámico a generar a partir del json</h1>
+    <div id="workflow">
+    </div>
+    <script id="stageTemplate" type="text/x-jquery-tmpl">
+        <div id=${id} class="stage">
+            <div class="stage_head">
+                <span>${title}</span>
+            </div>
+            <div class="stage_body">
+            </div>
+            <ul>
+                {{tmpl(tasks) "#tasksTemplate"}}
+            </ul>
+        </div>
+
+    </script>
+     <script id="tasksTemplate" type="text/x-jquery-tmpl">
+        <li id=${id}>${title}</li>
+
+    </script>
+    <script type="text/javascript">
+        var workflow = {
+            stages: [{
+                id: 'stage_001',
+                title: 'Nuevo Contrato JSON',
+                tasks: [
+                { id: '005', title: 'ContratoJSON 005' },
+                {id:'004', title:'ContratoJSON 004'}
+                ]
+            }, 
+            {
+                id: 'stage_002',
+                title: 'Preparar Orden de trabajo',
+                tasks: [
+                { id: '001', title: 'ContratoJSON 001' },
+                { id: '006', title: 'ContratoJSON 006' }
+                ]
+            },
+               {
+                   id: 'stage_003',
+                   title: 'En Proceso Instalación',
+                   tasks: [
+                { id: '002', title: 'ContratoJSON 002' },
+                { id: '009', title: 'ContratoJSON 009' }
+                ]
+               }
+            
+            ]
+        }
+
+        $("#workflow").workFlow(workflow).css('color', 'red');
+
+    </script>
+</body>
+</html>
