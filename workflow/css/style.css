@@ -1,0 +1,37 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.stage
+{
+    background-color: Gray;
+    margin-bottom:10px;
+}
+
+.stage_head
+{
+    background-color: Blue;
+}
+
+.stage_body
+{
+    background-color: Green;
+}
+
+
+.task
+{
+    background-color: Lime;
+    border-style:solid;
+    border-width:1px;
+}
+
+.task_message
+{
+    background-color: Aqua;
+    display:inline;
+    float:left;
+    width:80%;
+}
