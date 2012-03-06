@@ -8,7 +8,14 @@
             });
             return this.each(function () {
                 $("#stageTemplate").tmpl(workflow.stages).appendTo($this);
+                methods.addNewTaskButton();
+            
             });
+        },
+        addNewTaskButton:function(){
+            var $botonPlus=$('<span class="button">+</span>').button().on('click',function(){alert("añadir")});
+                $(".stage:first").find('.stage_head').append($botonPlus);
+
         },
 
         taskDone: function ($task) {
