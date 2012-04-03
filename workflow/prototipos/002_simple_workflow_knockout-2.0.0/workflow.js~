@@ -1,7 +1,7 @@
-function Task(id, title, done){
+function Task(id, description, done){
 	var self=this;
 	self.id=id;
-	self.title=title;
+	self.description=description;
 	self.done=done||false;
 
 }
