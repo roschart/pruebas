@@ -26,6 +26,7 @@ body
     background-color: Lime;
     border-style:solid;
     border-width:1px;
+    clear:both;
 }
 
 .task_message
