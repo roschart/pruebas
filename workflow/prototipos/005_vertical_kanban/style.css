@@ -1,0 +1,29 @@
+#header{ 
+background-color:#333;
+height:150px;
+}
+
+#left{ 
+float:left;
+width:200px;
+background-color:#dc8; 
+}
+
+#center { 
+margin-left:200px;
+background-color:#eec; 
+}
+
+#footer { 
+clear:both;
+background-color:#333;
+height:100px;
+}
+
+.stage{
+background-color:#F00;
+min-height:100px;
+margin:30px;
+margin-top:500px;
+}
+
