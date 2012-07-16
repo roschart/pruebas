@@ -72,14 +72,15 @@ def state(fun):
 	return stateinner
 
 
-		
-
-def injectar (clase,funciones):
+def injectar2(clase,funciones,decoradores):
 	for f in funciones:
-		setattr(clase,f.__name__,state(mayBe(bind(f))))
-
-injectar(Contexto,[sumar,dividir,negar])
-
+		foo=bind(f)
+		for d in decoradores:
+			foo=d(foo)
+		setattr(clase,f.__name__,foo)
+injectar2(Contexto,[sumar,dividir,negar],[state,mayBe])
+		 
+		
 
 '''Ejemplo de como usarlo'''
 
