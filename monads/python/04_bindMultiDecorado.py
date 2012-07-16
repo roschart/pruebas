@@ -4,6 +4,8 @@ def sumar(self,x):
 	return self.valor+x
 
 def dividir(self,x):
+	if x==0:
+		return None
 	return self.valor/x
 
 def negar(self):
@@ -22,38 +24,68 @@ class Contexto:
 	def detalle(self):
 		return "%s->[%s]" %(self.__str__(),self.states) 
 
-def lifting(fun):
-	def inner (*v,**k):
-		self=v[0]
-		if self.valor==None:
-			c=Contexto(None)
-			c.states=self.states+["%s(Nothing)->Nothing" % (fun.__name__)]
-			return c
-		try:
-			c=Contexto(fun(*v,**k))
-			c.states=self.states+["%s (%s,%s)->%s" % (fun.__name__,v[1:],k,c.valor)]
-			return c
-
-		except:
-			'''Esto es una práctica peligrosa ya que se captura cualquier error'''
-			c=Contexto(None)
-			c.states=self.states+["%s(Nothing)->Exception" % (fun.__name__)]
-			return c
+def bind(fun):
+	def inner(*v,**k):
+		return Contexto(fun(*v,**k));
+	inner.__name__=fun.__name__
 	return inner
 
+#def lifting(fun):
+#	def inner (*v,**k):
+#		self=v[0]
+#		if self.valor==None:
+#			c=Contexto(None)
+#			c.states=self.states+["%s(Nothing)->Nothing" % (fun.__name__)]
+#			return c
+#		try:
+#			c=Contexto(fun(*v,**k))
+#			c.states=self.states+["%s (%s,%s)->%s" % (fun.__name__,v[1:],k,c.valor)]
+#			return c
+#
+#		except:
+#			'''Esto es una práctica peligrosa ya que se captura cualquier error'''
+#			c=Contexto(None)
+#			c.states=self.states+["%s(Nothing)->Exception" % (fun.__name__)]
+#			return c
+#	return inner
+
+
+def mayBe(fun):
+	def maybeinner(*v,**k):
+		self=v[0]
+		if self.valor==None:
+			return Contexto(None)
+		return fun(*v,**k)
+	maybeinner.__name__=fun.__name__
+	return maybeinner
+
+def state(fun):
+	def stateinner(*v,**k):
+		self=v[0]
+		r=fun(*v,**k)
+		mensaje= "%s (%s,%s)->%s" % (fun.__name__,v[1:],k,r.valor)
+		if(self.states):
+			r.states=self.states+[mensaje]
+		else:
+			r.states=[mensaje]
+		return r
+	return stateinner
+
+
+		
 
 def injectar (clase,funciones):
 	for f in funciones:
-		setattr(clase,f.__name__,lifting(f))
+		setattr(clase,f.__name__,state(mayBe(bind(f))))
 
 injectar(Contexto,[sumar,dividir,negar])
 
 
 '''Ejemplo de como usarlo'''
 
-x=Contexto(16).sumar(2).dividir(3).sumar(4).negar()
+x=Contexto(20).sumar(4).sumar(10)
 print(x)
-print(x.detalle())
-x=Contexto(16).sumar(2).dividir(0).sumar(5)
+x=Contexto(None).sumar(4).sumar(10)
 print(x)
-print(x.detalle())
+x=Contexto(20).sumar(4).dividir(0)
+print(x)
