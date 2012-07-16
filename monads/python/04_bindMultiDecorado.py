@@ -30,26 +30,6 @@ def bind(fun):
 	inner.__name__=fun.__name__
 	return inner
 
-#def lifting(fun):
-#	def inner (*v,**k):
-#		self=v[0]
-#		if self.valor==None:
-#			c=Contexto(None)
-#			c.states=self.states+["%s(Nothing)->Nothing" % (fun.__name__)]
-#			return c
-#		try:
-#			c=Contexto(fun(*v,**k))
-#			c.states=self.states+["%s (%s,%s)->%s" % (fun.__name__,v[1:],k,c.valor)]
-#			return c
-#
-#		except:
-#			'''Esto es una práctica peligrosa ya que se captura cualquier error'''
-#			c=Contexto(None)
-#			c.states=self.states+["%s(Nothing)->Exception" % (fun.__name__)]
-#			return c
-#	return inner
-
-
 def mayBe(fun):
 	def maybeinner(*v,**k):
 		self=v[0]
