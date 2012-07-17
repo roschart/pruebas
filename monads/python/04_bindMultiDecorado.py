@@ -37,6 +37,9 @@ class Contexto:
 		return "Nothing"
 	def detalle(self):
 		return "%s->[%s]" %(self.__str__(),self.states) 
+
+
+
 ''' Este bind es parecido al de haskell pero se cambia un poco
 En haskell
    ma -> (a -> mb) ->m b
@@ -52,6 +55,7 @@ def bind(fun):
 	return inner
 
 def mayBeDecorator(fun):
+	'''Un bind que no propaga los Nothing'''
 	def maybeinner(*v,**k):
 		self=v[0]
 		if self.valor==None:
@@ -61,6 +65,8 @@ def mayBeDecorator(fun):
 	return maybeinner
 
 def stateDecorator(fun):
+	'''Un bind que guarda en Contexto.states los logs de
+	las operaciones realizadas'''
 	def stateinner(*v,**k):
 		self=v[0]
 		r=fun(*v,**k)
