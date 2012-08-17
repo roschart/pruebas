@@ -1,20 +1,36 @@
 # -*- coding: latin-1 -*-
 from deck import Deck
 
-def deckContiene(deck,deckDef):
+def deckContiene(deck,deckDefLista):
 	''' Devuelve true if si el deck cumple tener las cartas de la lista
+	se puede pasar una definicion o una lista de definiciones, si es una lista
+	devolvera true si se cumple alguna de ellas
 	>>> d=Deck({'M':30,'C':30})
 	>>> deckContiene(d,{'M':20})
 	True
 	>>> deckContiene(d,{'M':31})
 	False
+	>>> deckContiene(d,[{'M':31},{'C':20}])
+	True
+	>>> deckContiene(d,[{'M':31},{'C':31}])
+	False
 	'''
 	defPrincipal=deck.getDef()
-	for tipo, num in deckDef.items():
-		defPrincipal.setdefault(tipo,0)
-		if(defPrincipal[tipo]<num):
-			return False
-	return True
+	#Se pasa el deckDef a lista
+	if(type(deckDefLista) is dict):
+			deckDefLista=[deckDefLista]
+
+	for deckDef in deckDefLista:
+		encontrado=True
+		for tipo, num in deckDef.items():
+			defPrincipal.setdefault(tipo,0)
+			if(defPrincipal[tipo]<num):
+				encontrado=False
+				break
+		if encontrado:
+			return True
+
+	return False
 
 def hastaFinOContiene(deck,deckconfig):
 	'''Devuelve el número en el que se consiguió obtener el objetivo
