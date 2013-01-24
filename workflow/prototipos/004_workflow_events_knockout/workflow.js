@@ -37,6 +37,8 @@ function Stage(id,title,tasks){
 	self.title=title;
     self.tasks=ko.observableArray(tasks || []);
 	self.onTaskDone=function(task,parent){
+		//Move current task from the current stage
+		//to next
 		self.tasks.remove(task);
 		var stages=parent.stages();
 		var i=stages.indexOf(self);
