@@ -10,13 +10,11 @@ namespace Oficina.Entidades
     /// Clase que representea a un Oficinista
     /// Los becarios se comportan como un trabajador
     /// </summary>
-   public class Ofinista:TrabajadorBase
+   public class Ofinista:ITrabajador
     {
-        public override string HacerInforme()
+        public  string HacerInforme()
         {
-            string informe="Informe realizado por Oficinista";
-            this.notificar(informe);
-            return informe;
+            return "Informe realizado por Oficinista";
         }
     }
 }

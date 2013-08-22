@@ -10,18 +10,13 @@ namespace Oficina.Entidades
     /// Clase que representea a un Becario
     /// Los becarios se comportan como un trabajador
     /// </summary>
-   public class Becario:TrabajadorBase
+   public class Becario:ITrabajador
     {
    
-
-       public Becario():base() {
-   
-       }
-        public override string HacerInforme()
+        public string HacerInforme()
         {
-            string informe = "Informe realizado por Becario";
-            this.notificar(informe);
-            return informe ;
+            return  "Informe realizado por Becario";
+
         }
 
     }

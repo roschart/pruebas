@@ -10,13 +10,11 @@ namespace Oficina.Entidades
     /// Clase que representea a un Trabajador
     /// Los trabajadores hacen los informes de la oficina
     /// </summary>
-    public class Informatico:TrabajadorBase
+    public class Informatico:ITrabajador
     {
-        public override string  HacerInforme()
+        public string  HacerInforme()
         {
-            string informe = "Informe realizado por Informático";
-            this.notificar(informe);
-            return informe;
+            return "Informe realizado por Informático";
         }
 
     }

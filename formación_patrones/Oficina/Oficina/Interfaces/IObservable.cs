@@ -8,6 +8,5 @@ namespace Oficina.Interfaces
     public interface IObservable
     {
          void agregarObservador(IObservador observador);
-         void notificar(string informe);
     }
 }

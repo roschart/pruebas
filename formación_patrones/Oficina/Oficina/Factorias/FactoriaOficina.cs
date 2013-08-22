@@ -4,25 +4,38 @@ using System.Linq;
 using System.Text;
 using Oficina.Entidades;
 using Oficina.Interfaces;
+using Oficina.Decoradores;
 
 namespace Oficina.Factorias
 {
     public static class  FactoriaOficina
     {
+        public static ITrabajador dameTrabajador<T>() where T:ITrabajador{
+            return Activator.CreateInstance<T>();
+    }
         public static Jefe dameJefe(){
-            return new Jefe(new Becario());
+            return dameJefe<Becario>();
         }
-        public static Jefe dameJefe(IObservador calidad)
+        public static Jefe dameJefe(IObservador observador)
         {
-            Becario unBecario = new Becario();
-            unBecario.agregarObservador(calidad);
-            return new Jefe(unBecario);
+
+            return dameJefe<Becario>(observador);
         }
 
 
         public static Jefe dameJefe<T>() where T : ITrabajador
         {
-            return new Jefe(Activator.CreateInstance<T>());
+            return new Jefe(dameTrabajador<T>());
+        }
+
+
+
+
+        public static Jefe dameJefe<T>(IObservador observador) where T : ITrabajador
+        {
+            NotificadorInformesDecorador decorador = new NotificadorInformesDecorador(dameTrabajador<T>());
+            decorador.agregarObservador(observador);
+            return new Jefe(decorador);
         }
 
         public static DepartamentoCalidad dameDepartamentoCalidad()
@@ -30,13 +43,5 @@ namespace Oficina.Factorias
             return new DepartamentoCalidad();
         }
 
-
-
-        public static Jefe dameJefe<T1>(IObservador iObservador) where T1 : ITrabajador, IObservable
-        {
-            T1 unITrabajador = Activator.CreateInstance<T1>();
-            unITrabajador.agregarObservador(iObservador);
-            return new Jefe(unITrabajador);
-        }
     }
 }

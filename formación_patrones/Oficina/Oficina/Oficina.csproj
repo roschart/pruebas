@@ -47,12 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decoradores\CifradorInformesDecorador.cs" />
+    <Compile Include="Decoradores\FirmadorInformesDecorador.cs" />
+    <Compile Include="Decoradores\NotificadorInformesDecorador.cs" />
     <Compile Include="Entidades\Becario.cs" />
     <Compile Include="Entidades\DepartamentoCalidad.cs" />
     <Compile Include="Entidades\Oficinista.cs" />
     <Compile Include="Entidades\Jefe.cs" />
     <Compile Include="Entidades\Informatico.cs" />
-    <Compile Include="Entidades\TrabajadorBase.cs" />
     <Compile Include="Factorias\FactoriaOficina.cs" />
     <Compile Include="Interfaces\IObservador.cs" />
     <Compile Include="Interfaces\ITrabajador.cs" />
