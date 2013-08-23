@@ -110,7 +110,66 @@ namespace OficinaTest
             Assert.AreNotEqual(trabajador1.HacerInforme(), trabajador2.HacerInforme());
             Assert.AreEqual("Informe realizado por Informático#Informe cifrado##Informe firmado#", trabajador1.HacerInforme());
             Assert.AreEqual("Informe realizado por Informático#Informe firmado##Informe cifrado#", trabajador2.HacerInforme());
+        }
+        [Test]
+        public void UnEquipoEstaFormadoPorTrabajadores() {
+            Equipo unEquipo = new Equipo();
+            Becario unBecario = new Becario();
+            Informatico unInformatico = new Informatico();
+            unEquipo.AddTrabajador(unBecario);
+            unEquipo.AddTrabajador(unInformatico);
+            Assert.AreEqual(2, unEquipo.Count);
+            Assert.AreSame(unBecario, unEquipo[0]);
+            Assert.AreSame(unInformatico, unEquipo[1]);
+        }
+
+        [Test]
+        public void UnEquipoSeComportaComoUnTrabajador() {
+            Equipo unEquipo = new Equipo(new List<ITrabajador>() {new Becario(),new Ofinista()});
+            Assert.IsInstanceOf<ITrabajador>(unEquipo);
+        }
+
+        [Test]
+        public void TodosLosMiembrosDeUnEquipoHacenInformes()
+        {
+            Equipo unEquipo = new Equipo("Equipo Rojo",new List<ITrabajador>() { new Becario(), new Ofinista() });
+            Assert.AreEqual("Equipo Rojo\n\tInforme realizado por Becario\n\tInforme realizado por Oficinista",unEquipo.HacerInforme());
+        }
+
+        [Test]
+        public void ElNombrePorDefectoDeUnEquipoEsAnonimo()
+        {
+            Equipo unEquipo = new Equipo(new List<ITrabajador>() { new Becario(), new Ofinista() });
+            Assert.AreEqual("Anónimo\n\tInforme realizado por Becario\n\tInforme realizado por Oficinista", unEquipo.HacerInforme());
+        }
+        [Test]
+        public void UnEquipoPuedeContenerMasEquiposYTrabajadores() {
+
+            Equipo unEquipo = new Equipo("Equipo pequeño");
+            Becario unBecario = new Becario();
+            Informatico unInformatico = new Informatico();
+            unEquipo.AddTrabajador(unBecario);
+            unEquipo.AddTrabajador(unInformatico);
+            Equipo unEquipoCompuesto = new Equipo("Equipo Compuesto",new List<ITrabajador>() { unEquipo, new Ofinista() });
+            Assert.AreEqual(2, unEquipoCompuesto.Count); //un Equipo y un oficinista
+            Assert.AreEqual(3,unEquipoCompuesto.TotalMiembros);
+            Assert.AreSame(unEquipoCompuesto[0], unEquipo);
+            Assert.AreSame(((Equipo)unEquipoCompuesto[0])[0], unBecario);
+            Assert.AreSame(((Equipo)unEquipoCompuesto[0])[1], unInformatico);
+            string informe = "" +
+                "Equipo Compuesto" +
+                "\n\tEquipo pequeño" +
+                "\n\t\tInforme realizado por Becario" +      //Una tabulación mas por nivel
+                "\n\t\tInforme realizado por Informático" +
+                "\n\tInforme realizado por Oficinista";
+
+            Assert.AreEqual(informe, unEquipoCompuesto.HacerInforme());
         
+        }
+        [Test]
+        public void UnEquipoSePuedeDecorarComoCualquierTrabajador() {
+            Equipo unEquipo = new Equipo(new List<ITrabajador>() { new Becario(), new Ofinista() });
+            Assert.AreEqual("Anónimo\n\tInforme realizado por Becario\n\tInforme realizado por Oficinista#Informe cifrado#",new CifradorInformesDecorador(unEquipo).HacerInforme());
         }
     }
 }

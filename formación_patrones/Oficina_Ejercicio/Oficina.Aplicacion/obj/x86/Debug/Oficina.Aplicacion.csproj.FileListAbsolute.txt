@@ -1,9 +1,0 @@
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\Oficina.Aplicacion\bin\Debug\Oficina.Aplicacion.dll
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\Oficina.Aplicacion\bin\Debug\Oficina.Aplicacion.pdb
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\Oficina.Aplicacion\bin\Debug\Oficina.dll
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\Oficina.Aplicacion\bin\Debug\Oficina.pdb
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\Oficina.Aplicacion\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\Oficina.Aplicacion\obj\x86\Debug\Oficina.Aplicacion.dll
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\Oficina.Aplicacion\obj\x86\Debug\Oficina.Aplicacion.pdb
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina_Ejercicio\Oficina.Aplicacion\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina_Ejercicio\Oficina.Aplicacion\obj\x86\Debug\Oficina.Aplicacion.dll

@@ -1,9 +1,0 @@
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\OficinaTest3\bin\Debug\OficinaTest3.dll
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\OficinaTest3\bin\Debug\OficinaTest3.pdb
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\OficinaTest3\bin\Debug\nunit.framework.dll
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\OficinaTest3\bin\Debug\Oficina.dll
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\OficinaTest3\bin\Debug\Oficina.pdb
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\OficinaTest3\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\OficinaTest3\obj\Debug\OficinaTest3.dll
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\OficinaTest3\obj\Debug\OficinaTest3.pdb
-C:\Users\joseluis.dominguez\Workspace\formación_patrones\Oficina\OficinaTest3\bin\Debug\nunit.framework.xml
