@@ -1,25 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\joseluis.dominguez\Workspace\pruebas\formación_patrones\Oficina\OficinaTest\bin\Debug\OficinaTest.dll" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-08-23" time="12:12:37">
+<test-results name="C:\Users\joseluis.dominguez\Workspace\pruebas\formación_patrones\Oficina\OficinaTest\bin\Debug\OficinaTest.dll" total="18" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-08-23" time="13:31:32">
   <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.5472" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.2\bin" machine-name="AXN1" user="joseluis.dominguez" user-domain="NEXUS" />
   <culture-info current-culture="es-ES" current-uiculture="es-ES" />
-  <test-suite type="Assembly" name="C:\Users\joseluis.dominguez\Workspace\pruebas\formación_patrones\Oficina\OficinaTest\bin\Debug\OficinaTest.dll" executed="True" result="Failure" success="False" time="0.150" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\joseluis.dominguez\Workspace\pruebas\formación_patrones\Oficina\OficinaTest\bin\Debug\OficinaTest.dll" executed="True" result="Success" success="True" time="0.094" asserts="0">
     <results>
-      <test-suite type="Namespace" name="OficinaTest" executed="True" result="Failure" success="False" time="0.129" asserts="0">
+      <test-suite type="Namespace" name="OficinaTest" executed="True" result="Success" success="True" time="0.093" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="InformesTest" executed="True" result="Failure" success="False" time="0.126" asserts="0">
+          <test-suite type="TestFixture" name="InformesTest" executed="True" result="Success" success="True" time="0.092" asserts="0">
             <results>
-              <test-case name="OficinaTest.InformesTest.UnEquipoPuedeContenerMasEquiposYTrabajadores" executed="True" result="Failure" success="False" time="0.109" asserts="6">
-                <failure>
-                  <message><![CDATA[  Expected string length 133 but was 132. Strings differ at index 6.
-  Expected: "EquipoCompuesto\n\tEquipo pequeño\n\t\tInforme realizado por Becar..."
-  But was:  "Equipo Compuesto\n\tEquipo pequeño\n\tInforme realizado por Becar..."
-  -----------------^
-]]></message>
-                  <stack-trace><![CDATA[en OficinaTest.InformesTest.UnEquipoPuedeContenerMasEquiposYTrabajadores() en C:\Users\joseluis.dominguez\Workspace\pruebas\formación_patrones\Oficina\OficinaTest\InformesTest.cs:línea 166
-]]></stack-trace>
-                </failure>
-              </test-case>
+              <test-case name="OficinaTest.InformesTest.AUnJefeSeLePuedeInyectarCualquuierClaseImplementeITrabajador" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+              <test-case name="OficinaTest.InformesTest.CuandoUnJefePideUnInofeLoHaceUnBecario" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="OficinaTest.InformesTest.ElNombrePorDefectoDeUnEquipoEsAnonimo" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="OficinaTest.InformesTest.ElOrdenDeLosDecoradoresImporta" executed="True" result="Success" success="True" time="0.015" asserts="3" />
+              <test-case name="OficinaTest.InformesTest.SePuedeCrearUnJefeConUnDepartamentoDeCalidadQueObserveLosInformes" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+              <test-case name="OficinaTest.InformesTest.SePuedeCrearUnJefeConUnDepartamentoDeCalidadQueObserveLosInformesDeCualquierITrabajador" executed="True" result="Success" success="True" time="0.001" asserts="5" />
+              <test-case name="OficinaTest.InformesTest.SePuedenConcatenearDecoradoresDeInformes" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="OficinaTest.InformesTest.SiNoSeEspecificaNoSeMonitorizanLosInformes" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="OficinaTest.InformesTest.SiNoSeEspecificaNoSeMonitorizanLosInformesDeInformatico" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+              <test-case name="OficinaTest.InformesTest.SiNoSeEspecificaNoSeMonitorizanLosInformesDeOficinista" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="OficinaTest.InformesTest.TodosLosMiembrosDeUnEquipoHacenInformes" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="OficinaTest.InformesTest.UnEquipoEstaFormadoPorTrabajadores" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+              <test-case name="OficinaTest.InformesTest.UnEquipoPuedeContenerMasEquiposYTrabajadores" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+              <test-case name="OficinaTest.InformesTest.UnEquipoSeComportaComoUnTrabajador" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="OficinaTest.InformesTest.UnEquipoSePuedeDecorarComoCualquierTrabajador" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="OficinaTest.InformesTest.unTrabajadorSePuedeDecorarConUnCifradorDeInformes" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+              <test-case name="OficinaTest.InformesTest.unTrabajadorSePuedeDecorarConUnFirmadorDeInformes" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="OficinaTest.InformesTest.unTrabajadorSePuedeDecorarConUnNotificador" executed="True" result="Success" success="True" time="0.001" asserts="3" />
             </results>
           </test-suite>
         </results>
