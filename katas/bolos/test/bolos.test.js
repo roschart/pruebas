@@ -3,8 +3,8 @@ var bolos = require('../src/bolos');
 exports.ComienzoPartida = function(test) {
     test.expect(3);
     var marcador = bolos.Marcador("Jugador1");
-    test.equal(marcador.ronda, 1);
-    test.equal(marcador.tirada, 1);
+    test.equal(marcador.numRondas(), 1 ,"Se debe de estar en la primera ronda");
+    test.equal(marcador.tirada(), 1);
     test.equal(marcador.getPuntuacion(), "[ , ()]");
     test.done();
 };
@@ -13,8 +13,8 @@ exports.PrimeraTirada = function(test) {
     test.expect(3);
     var marcador = bolos.Marcador("Jugador1")
         .bolosDerribados(4);
-    test.equal(marcador.ronda, 1);
-    test.equal(marcador.tirada, 2);
+    test.equal(marcador.numRondas(), 1);
+    test.equal(marcador.tirada(), 2);
     test.equal(marcador.getPuntuacion(), "[4, ()]");
     test.done();
 };
