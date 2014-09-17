@@ -1,8 +1,15 @@
 exports.CrearRonda = function() {
     this.tiradas = [];
 
-    this.bolosDerribados = function(num_bolos) {
+    this.numTirada = function() {
+        return this.tiradas.length + 1;
+    };
+
+    this.bolosDerribados = function(num_bolos, callSiFin) {
         this.tiradas.push(num_bolos);
+        if (this.tiradas.length >= 2) {
+            callSiFin();
+        }
         return this;
     };
 
