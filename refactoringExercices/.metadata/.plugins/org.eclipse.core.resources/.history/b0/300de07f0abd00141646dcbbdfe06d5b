@@ -1,0 +1,21 @@
+package balirac.videoStore;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CustomerTest {
+
+	@Test
+	public void test() {
+		Customer customer=new Customer("Jose");
+		customer.addRental(new Rental(new Movie("Un dia",Movie.CHILDRENS),3));
+		String result=customer.statement();
+		String expected="Rental Record for Jose\n"
+				+"\tUn dia	1.5\n"
+				+"Amount owed is 1.5\n"
+				+"You earned 1 frequent renter points";
+		assertEquals(expected,result);
+	}
+
+}
