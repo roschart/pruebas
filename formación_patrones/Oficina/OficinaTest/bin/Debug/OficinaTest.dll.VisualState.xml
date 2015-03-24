@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1019]C:\Users\joseluis.dominguez\Workspace\pruebas\formación_patrones\Oficina\OficinaTest\bin\Debug\OficinaTest.dll</TopNode>
+  <SelectedNode>[0-1020]OficinaTest</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1019]C:\Users\joseluis.dominguez\Workspace\pruebas\formación_patrones\Oficina\OficinaTest\bin\Debug\OficinaTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1020]OficinaTest" Expanded="true" />
+    <Node UniqueName="[0-1000]OficinaTest.InformesTest" Expanded="true" />
+  </Nodes>
+</VisualState>
