@@ -10,20 +10,20 @@
     <script type="text/jsx;harmony=true">
 			var FancyCheckBox=React.createClass({
 				render: function(){
-					var {checked, ...other}=this.props;
+					var {checked,title, ...other}=this.props;
 					var fancyClass=this.props.checked ? 'FancyChecked': 'FancyUnchecked';
+					var fancyTitle=this.props.checked ? 'X '+title: 'O '+title;
 					return (
-					<div {...other} className={fancyClass} onClick={this.props.onClick}>
-							{this.props.children}
-						</div>
+						<label>
+							<input {...other} type="checkbox" className={fancyClass} checked={checked} />
+							{title}
+						</label>
 					);
 				}	
 			});
 
 			React.render(
-			<FancyCheckBox checked={true} onClick={console.log.bind(console)} >
-			  Brave new world!
-			</FancyCheckBox>,
+			<FancyCheckBox checked={true} onClick={console.log.bind(console)} title="Hello Jose" />,
 				document.getElementById("example")
 			);
     </script>

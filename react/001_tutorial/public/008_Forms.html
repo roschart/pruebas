@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms</title>
+    <script src="js/react.js"></script>
+    <script src="js/JSXTransformer.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/jsx;harmony=true">
+			var MyInput=React.createClass({
+				getInitialState:function(){
+					return {value:"Brave new world"}
+				},
+				handleChange:function(event){
+					this.setState({value:event.target.value});
+				},
+				render:function(){
+					var value=this.state.value;
+					return (
+					<input type="text" value={value} onChange={this.handleChange}/>
+					);
+				}
+			});
+
+			React.render(<MyInput />,document.getElementById("example"));
+    </script>
+  </body>
+</html>
+
