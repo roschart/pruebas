@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transfering props</title>
+    <script src="js/react.js"></script>
+    <script src="js/JSXTransformer.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/jsx;harmony=true">
+			var FancyCheckBox=React.createClass({
+				render: function(){
+					var {checked, ...other}=this.props;
+					var fancyClass=this.props.checked ? 'FancyChecked': 'FancyUnchecked';
+					return (
+					<div {...other} className={fancyClass} onClick={this.props.onClick}>
+							{this.props.children}
+						</div>
+					);
+				}	
+			});
+
+			React.render(
+			<FancyCheckBox checked={true} onClick={console.log.bind(console)} >
+			  Brave new world!
+			</FancyCheckBox>,
+				document.getElementById("example")
+			);
+    </script>
+  </body>
+</html>
+
