@@ -13,7 +13,7 @@
 					return {value:"Brave new world"}
 				},
 				handleChange:function(event){
-					this.setState({value:event.target.value});
+					this.setState({value:event.target.value.substr(0,10)});
 				},
 				render:function(){
 					var value=this.state.value;
