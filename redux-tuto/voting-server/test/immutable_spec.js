@@ -24,9 +24,9 @@ describe('immutability', () => {
 			}	
 			it('add a movie to list',()=>{
 				let state = List.of('Hello','World');
-				let newState=addMovie('Cruel');
+				let newState=addMovie(state,'Cruel');
 				expect(state).to.equal(List.of('Hello','World'));
-				expect(newState).to.equal(List.of('Hello','World','cruel'));
+				expect(newState).to.equal(List.of('Hello','World','Cruel'));
 				})
 			});
 
