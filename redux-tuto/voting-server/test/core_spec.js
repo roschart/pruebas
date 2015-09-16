@@ -42,6 +42,29 @@ describe('Application logic', () => {
         entries: ['Sunshine']
       }));
     });
+    it('puts winner of current vote back to entries', () => {
+      const state = fromJS({
+        vote: {
+          pair: ['Trainspotting', '28 Days Later'],
+          tally: {
+            'Trainspotting': 4,
+            '28 Days Later': 2
+          }
+        },
+        entries: ['Sunshine', 'Millions', '127 Hours']
+      });
+      const nextState = next(state);
+      expect(nextState).to.equal(fromJS({
+        vote: {
+          pair: ['Sunshine', 'Millions'],
+          tally: {
+            'Trainspotting': 4,
+            '28 Days Later': 2
+          }
+        },
+        entries: ['127 Hours', 'Trainspotting']
+      }));
+    });
   });
   describe('vote', () => {
     it('creates a tally for the voted entry', () => {
@@ -50,26 +73,34 @@ describe('Application logic', () => {
           pair: ['Trainspotting', '28 Days Later']
         }
       });
-      const nextState=vote(state,'Trainspotting');
+      const nextState = vote(state, 'Trainspotting');
       expect(nextState).to.equal(fromJS({
         vote: {
           pair: ['Trainspotting', '28 Days Later'],
-          tally: {'Trainspotting':1}
+          tally: {
+            'Trainspotting': 1
+          }
         }
       }));
     });
-    it('add vote to existing tally',()=>{
+    it('add vote to existing tally', () => {
       const state = fromJS({
         vote: {
           pair: ['Trainspotting', '28 Days Later'],
-          tally:{'Trainspotting':4,'28 Days Later':2}
+          tally: {
+            'Trainspotting': 4,
+            '28 Days Later': 2
+          }
         }
       });
-      const nextState=vote(state,'Trainspotting');
+      const nextState = vote(state, 'Trainspotting');
       expect(nextState).to.equal(fromJS({
         vote: {
           pair: ['Trainspotting', '28 Days Later'],
-          tally: {'Trainspotting':5,'28 Days Later':2}
+          tally: {
+            'Trainspotting': 5,
+            '28 Days Later': 2
+          }
         }
       }));
     });
