@@ -8,8 +8,7 @@ export function setEntries(state, entries) {
 }
 
 export function next(state) {
-  const voteWin = getWin(state.get('vote'));
-  const entries = state.get('entries').concat(voteWin);
+  const entries = state.get('entries').concat(getWin(state.get('vote')));
   return state.merge({
     vote: Map({
       pair: entries.take(2)
@@ -28,7 +27,7 @@ function getWin(vote) {
     return [];
   }
   const [a, b] = vote.get('pair');
-  const voteA = vote.getIn(['tally', a]);
-  const voteB = vote.getIn(['tally', b]);
+  const voteA = vote.getIn(['tally', a],0);
+  const voteB = vote.getIn(['tally', b],0);
   return voteA > voteB ? [a] : voteB > voteA ? [b] : [a, b];
 }
