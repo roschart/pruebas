@@ -8,22 +8,27 @@ export function setEntries(state, entries) {
 }
 
 export function next(state) {
+  const voteWin = getWin(state.get('vote'));
+  const entries = state.get('entries').concat(voteWin);
   return state.merge({
     vote: Map({
-      pair: toVote(state)
+      pair: entries.take(2)
     }),
-    entries: restEntries(state)
+    entries: entries.skip(2)
   });
 }
 
 export function vote(state, movie) {
-  return state.updateIn(['vote', 'tally', movie], 0 ,(vote)=>vote+1);
+  return state.updateIn(['vote', 'tally', movie], 0, (vote) => vote + 1);
 }
 
-function toVote(state) {
-  return state.get('entries').take(2);
-}
 
-function restEntries(state) {
-  return state.get('entries').skip(2);
+function getWin(vote) {
+  if (!vote) {
+    return [];
+  }
+  const [a, b] = vote.get('pair');
+  const voteA = vote.getIn(['tally', a]);
+  const voteB = vote.getIn(['tally', b]);
+  return voteA > voteB ? [a] : voteB > voteA ? [b] : [a, b];
 }

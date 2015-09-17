@@ -56,11 +56,7 @@ describe('Application logic', () => {
       const nextState = next(state);
       expect(nextState).to.equal(fromJS({
         vote: {
-          pair: ['Sunshine', 'Millions'],
-          tally: {
-            'Trainspotting': 4,
-            '28 Days Later': 2
-          }
+          pair: ['Sunshine', 'Millions']
         },
         entries: ['127 Hours', 'Trainspotting']
       }));
