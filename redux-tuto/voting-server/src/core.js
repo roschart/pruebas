@@ -1,5 +1,5 @@
 import {
-  List, Map , fromJS
+  List, Map, fromJS
 }
 from 'immutable';
 
@@ -9,8 +9,10 @@ export function setEntries(state, entries) {
 
 export function next(state) {
   const entries = state.get('entries').concat(getWin(state.get('vote')));
-  if(entries.count()===1){
-    return fromJS({winner:entries.get(0)});
+  if (entries.count() === 1) {
+    return state.remove('vote')
+      .remove('entries')
+      .set('winner', entries.first());
   }
   return state.merge({
     vote: Map({
@@ -30,7 +32,7 @@ function getWin(vote) {
     return [];
   }
   const [a, b] = vote.get('pair');
-  const voteA = vote.getIn(['tally', a],0);
-  const voteB = vote.getIn(['tally', b],0);
+  const voteA = vote.getIn(['tally', a], 0);
+  const voteB = vote.getIn(['tally', b], 0);
   return voteA > voteB ? [a] : voteB > voteA ? [b] : [a, b];
 }
