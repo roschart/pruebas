@@ -2,6 +2,7 @@ import {
   List, Map, fromJS
 }
 from 'immutable';
+export function defaultInitState(){return Map();}
 
 export function setEntries(state, entries) {
   return state.set('entries', List(entries));
