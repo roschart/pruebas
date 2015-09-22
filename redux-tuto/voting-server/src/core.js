@@ -1,5 +1,5 @@
 import {
-  List, Map, fromJS
+  List, Map
 }
 from 'immutable';
 export function defaultInitState(){return Map();}
@@ -23,8 +23,8 @@ export function next(state) {
   });
 }
 
-export function vote(state, movie) {
-  return state.updateIn(['vote', 'tally', movie], 0, (vote) => vote + 1);
+export function vote(vote, entry) {
+  return vote.updateIn(['tally', entry], 0, tally => tally + 1);
 }
 
 
