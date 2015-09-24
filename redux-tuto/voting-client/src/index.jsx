@@ -1,6 +1,7 @@
 import React from 'react';
 import Voting from './components/Voting';
-const pair = ['Trainspotting', '28 Days Later'];
+import {List} from 'immutable';
+const pair = List(['Trainspotting', '28 Days Later']);
 
 React.render(
   <Voting pair={pair} hasVotedX='Trainspotting'  />,
