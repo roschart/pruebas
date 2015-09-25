@@ -18,16 +18,27 @@ function counter(state = 0, action = null) {
 let store = createStore(counter);
 store.subscribe(() => console.log(store.getState()));
 
-store.dispatch({
-  type: CounterActions.INCREMENT_COUNTER
-});
-// 1
-store.dispatch({
-  type: CounterActions.INCREMENT_COUNTER
-});
-// 2
-store.dispatch({
-  type: CounterActions.DECREMENT_COUNTER
+
+
+var connectActions = {
+  decrement: () => {
+    store.dispatch(CounterActions.decrement());
+  },
+  increment: () => {
+    store.dispatch(CounterActions.increment());
+  },
+  incrementAsync: () => {
+    store.dispatch(CounterActions.incrementAsync());
+  },
+  incrementIfOdd: () => {
+    store.dispatch(CounterActions.incrementIfOdd());
+  }
+};
+
+
+store.subscribe(() => {
+  React.render(<Counter counter={store.getState()} {...connectActions}/>, document.getElementById('app'));
 });
 
-React.render(<Counter {...CounterActions} counter={0} />, document.getElementById('app'));
+//Dispach something to trigger firs init
+store.dispatch({type:'init'});
