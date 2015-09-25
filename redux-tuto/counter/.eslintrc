@@ -3,7 +3,7 @@
         "indent": [
             2,
             2,
-            {"SwitchCase": 1}
+            {"SwitchCase": 0}
         ],
         "quotes": [
             2,
@@ -13,6 +13,7 @@
             0,
             "unix"
         ],
+        "no-console":0,
         "semi": [
             2,
             "always"
