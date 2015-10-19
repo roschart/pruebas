@@ -19,6 +19,7 @@ let store = createStore(counter);
 store.subscribe(() => console.log(store.getState()));
 
 
+//This is a bad solution, the manage of state must be doit in a smart component
 
 var connectActions = {
   decrement: () => {
