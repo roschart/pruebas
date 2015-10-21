@@ -1,0 +1,40 @@
+{
+    "rules": {
+        "indent": [
+            2,
+            2,
+            {"SwitchCase": 0}
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "linebreak-style": [
+            0,
+            "unix"
+        ],
+        "no-console":0,
+        "semi": [
+            2,
+            "always"
+        ]
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "mocha": true,
+        "jquery": true
+    },
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+        "modules": "true",
+        "experimentalObjectRestSpread": true
+    },
+    "plugins": [
+
+    ],
+    "globals":{
+      "R":true
+    }
+}
