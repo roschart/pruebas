@@ -9,11 +9,10 @@ $(document).ready(() => {
   }
 
   function printImg(data) {
-    $('#photos').empty();
-    data.items.forEach((flickr) => {
-      var html = '<img src="' + flickr.media.m + '"></img>';
-      $('#photos').append($(html));
-    });
+
+    $('#photos').html(data.items.map((flickr) => {
+      return '<img src="' + flickr.media.m + '"></img>';
+    }));
   }
 
 });
