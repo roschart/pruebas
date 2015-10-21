@@ -25,11 +25,11 @@ var Impure = {
 };
 
 var renderImages = R.compose(Impure.setHtml('#photos'), images);
-var app = R.compose(Impure.getJSON(renderImages), url);
+var searchAndPrint = R.compose(Impure.getJSON(renderImages), url);
 
 $(document).ready(() => {
   $('#btSearch').click(() => {
     var link = $('#tbSearch').val();
-    app(link);
+    searchAndPrint(link);
   });
 });
