@@ -14,17 +14,6 @@ function printImg(data) {
   }));
 }
 
-
-var button = document.getElementById('btSearch');
-
-var source = Rx.Observable.fromEvent(button, 'click');
-
-// var throttledInput = $('#textInput')
-//   .keyupAsObservable()
-//   .map(function(ev) {
-//     return $(ev.target).val();
-//   });
-
 function searchInUlr(url) {
   return $.ajaxAsObservable({
     url: url,
@@ -32,20 +21,17 @@ function searchInUlr(url) {
   });
 }
 
-source.subscribe(function() {
+var buttonSource = Rx.Observable.fromEvent(document.getElementById('btSearch'), 'click');
+
+
+var urlSource = buttonSource.flatMap(function() {
   var text = $('#tbSearch').val();
   var url_search = url(text);
-  console.log(url_search);
-  searchInUlr(url_search).subscribe((xhs) => {
-    printImg(xhs.data);
-  });
+  return Rx.Observable.just(url_search);
 });
 
+var images=urlSource.flatMap((url)=>searchInUlr(url));
 
-//
-// $(document).ready(() => {
-//   $('#btSearch').click(() => {
-//     var text = $('#tbSearch').val();
-//     $.getJSON(url(text)).done(printImg);
-//   });
-// });
+images.subscribe((xhs) => {
+  printImg(xhs.data);
+});
