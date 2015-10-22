@@ -1,0 +1,22 @@
+{
+  "name": "jquery",
+  "version": "0.0.0",
+  "homepage": "https://github.com/roschart/pruebas",
+  "authors": [
+    "Jose Luis Domínguez <jl.balirac@payvision.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "rxjs": "~4.0.6",
+    "rxjs-dom": "rx-dom#~7.0.3",
+    "rxjs-jquery": "~1.1.7"
+  }
+}
